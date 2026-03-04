@@ -6,20 +6,22 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import java.net.MalformedURLException
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         var FirstName="Kyle"
-        var Surname='Adams'
+        var Surname= "Adams"
         var Adress="5 Rosemary Road,Table View"
         var IsMale= true
         var DayOfBirth="11"
         var MonthOfBirth="October"
         var YearOfBirth="2005"
 
-        
+        Log.d ("Hello",FirstName+"  "+Surname+"your adress is"+Adress+"it is" +IsMale+
+                "that you are male, you were born on the "+DayOfBirth+MonthOfBirth+YearOfBirth)
 
 
         setContentView(R.layout.activity_main)
