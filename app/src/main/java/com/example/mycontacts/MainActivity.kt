@@ -21,11 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         Log.d(
             "Hello",
-            "$firstName $surname your address is $address it is $isMale that you are male, you were born on $dayOfBirth $monthOfBirth $yearOfBirth"
+            "$firstName $surname your address is $address it is $isMale that you are male, " +
+                    "you were born on $dayOfBirth $monthOfBirth $yearOfBirth"
         )
+        var
 
-
-        setContentView(R.layout.activity_main)
+                    setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
