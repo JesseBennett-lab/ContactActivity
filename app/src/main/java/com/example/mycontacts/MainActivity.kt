@@ -1,27 +1,28 @@
 package com.example.mycontacts
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import java.net.MalformedURLException
-import android.util.Log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        var FirstName="Kyle"
-        var Surname= "Adams"
-        var Adress="5 Rosemary Road,Table View"
-        var IsMale= true
-        var DayOfBirth="11"
-        var MonthOfBirth="October"
-        var YearOfBirth="2005"
+        val firstName ="Kyle"
+        val surname = "Adams"
+        val address ="5 Rosemary Road,Table View"
+        val  isMale = true
+        val dayOfBirth =11
+        val monthOfBirth =10
+        val yearOfBirth =2005
 
-        Log.d ("Hello",FirstName+"  "+Surname+"your adress is"+Adress+"it is" +IsMale+
-                "that you are male, you were born on the "+DayOfBirth+MonthOfBirth+YearOfBirth)
+        Log.d(
+            "Hello",
+            "$firstName $surname your address is $address it is $isMale that you are male, you were born on $dayOfBirth $monthOfBirth $yearOfBirth"
+        )
 
 
         setContentView(R.layout.activity_main)
